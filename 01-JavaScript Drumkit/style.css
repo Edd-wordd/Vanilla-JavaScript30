@@ -1,0 +1,15 @@
+.keys {
+}
+.key {
+  border: 5px solid black;
+  width: 180px;
+  height: 250px;
+  float: left;
+  margin-right: 6px;
+  /* margin-left: 0px; */
+  margin-top: 20rem;
+  font-size: 150px;
+}
+.sound {
+  font-size: 10px;
+}
