@@ -1,15 +1,36 @@
-.keys {
+html {
+  background: url(./img/efe-kurnaz-RnCPiXixooY-unsplash.jpg) center;
 }
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 75vh;
+}
+
 .key {
   border: 5px solid black;
   width: 180px;
   height: 250px;
-  float: left;
   margin-right: 6px;
-  /* margin-left: 0px; */
   margin-top: 20rem;
   font-size: 150px;
+  transition: all 0.3s ease;
 }
 .sound {
-  font-size: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #000000;
+}
+.playing {
+  transform: scale(2.2);
+  border-color: lime;
+  color: lime;
+  /* background-color: lime; */
+  box-shadow: 7 7 7 7 #000000;
+}
+kbd {
+  display: block;
+  font-size: 4rem;
 }
