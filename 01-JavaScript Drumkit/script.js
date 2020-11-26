@@ -17,3 +17,23 @@ const keys = Array.from(document.querySelectorAll(".key"));
 keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
 //when you press down on a key it triggers the playsound fuunction
 window.addEventListener("keydown", playSound);
+
+document.getElementById("9pad").onclick = function () {
+   console.log("edward you bastard thats only 9");
+   let newBtn = document.createElement("input");
+   newBtn.setAttribute("type", "button");
+   newBtn.setAttribute("value", "20pad");
+   // newBtn.setAttribute("class", "buttons");
+   newBtn.className += " buttons";
+
+   newBtn.textContent = "20pad";
+   console.log(newBtn);
+   let referenceNode = document.querySelector("#test");
+   referenceNode.append(newBtn);
+};
+document.getElementById("12pad").onclick = function () {
+   console.log("edward you bastard thats 12");
+};
+document.getElementById("16pad").onclick = function () {
+   console.log("edward you pumping 16");
+};
