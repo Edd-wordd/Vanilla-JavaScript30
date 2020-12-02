@@ -31,15 +31,31 @@ document.getElementById("9pad").onclick = function () {
 };
 
 document.getElementById("12pad").onclick = function () {
-   console.log("edward you bastard thats 12");
-   let newPad = document.querySelector(".key");
-   console.log(newPad);
-   // newPad.className += "key";
-   newPad.setAttribute("data-key", "81");
-   newPad.textContent = "Q";
-   let referenceNode = document.querySelector("#key-section-1");
-   referenceNode.append(newPad);
+   let kbdLetter = document.createElement("kbd");
+   kbdLetter.textContent = "Q";
+
+   let newPadRow1 = document.createElement("div");
+   newPadRow1.setAttribute("data-key", "81");
+   newPadRow1.classList.add("key");
+   newPadRow1.append(kbdLetter);
+   let addfirstPad = document.querySelector("#key-section-1");
+   addfirstPad.append(newPadRow1);
+
+   let newPadRow2 = document.createElement("div");
+   newPadRow2.setAttribute("data-key", "87");
+   newPadRow2.classList.add("key");
+
+   let addSecondPad = document.querySelector("#key-section-2");
+   addSecondPad.append(newPadRow2);
+
+   let newPadRow3 = document.createElement("div");
+   newPadRow3.setAttribute("data-key", "69");
+   newPadRow3.classList.add("key");
+
+   let addThirdPad = document.querySelector("#key-section-3");
+   addThirdPad.append(newPadRow3);
 };
+
 document.getElementById("16pad").onclick = function () {
    console.log("edward you pumping 16");
 };
