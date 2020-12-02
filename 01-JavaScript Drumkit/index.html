@@ -7,25 +7,22 @@
       <title>EDDWORDDS DRUMKIT</title>
    </head>
    <body>
-      <div>
+      <div class="heading">
          <h1>EDD-DRUM TR-808</h1>
          <h3>Computer Controlled</h3>
       </div>
-      <div class="btns" id="test">
-         <input class="buttons" id="9pad" type="button" value="9pad" />
-         <input class="buttons" id="12pad" type="button" value="12pad" />
-         <input class="buttons" id="16pad" type="button" value="16pad" />
+      <div class="btns" id="btn-section">
+         <button class="buttons" id="9pad" type="button">9 Pad</button>
+         <button class="buttons" id="12pad" type="button">12 Pad</button>
+         <button class="buttons" id="16pad" type="button">16 Pad</button>
       </div>
-      <!-- <div class="screen">
-         <textarea></textarea>
-      </div> -->
       <div class="body">
          <div class="keys">
             <div class="screen">
                <textarea></textarea>
             </div>
          </div>
-         <div class="keys">
+         <div class="keys" id="key-section-1">
             <div class="key" data-key="65">
                <kbd>A</kbd>
                <span class="sound">Boom</span>
@@ -38,8 +35,12 @@
                <kbd>D</kbd>
                <span class="sound">HiHat</span>
             </div>
+            <div class="key" data-key="68">
+               <kbd>D</kbd>
+               <span class="sound">HiHat</span>
+            </div>
          </div>
-         <div class="keys">
+         <div class="keys" id="key-section-2">
             <div class="key" data-key="70">
                <kbd>F</kbd>
                <span class="sound">Kick</span>
@@ -52,9 +53,13 @@
                <kbd>H</kbd>
                <span class="sound">Ride</span>
             </div>
+            <div class="key" data-key="72">
+               <kbd>H</kbd>
+               <span class="sound">Ride</span>
+            </div>
          </div>
 
-         <div class="keys">
+         <div class="keys" id="key-section-3">
             <div class="key" data-key="74">
                <kbd>J</kbd>
                <span class="sound">Snare</span>
@@ -62,6 +67,28 @@
             <div class="key" data-key="75">
                <kbd>K</kbd>
                <span class="sound">Tink</span>
+            </div>
+            <div class="key" data-key="76">
+               <kbd>L</kbd>
+               <span class="sound">Tom</span>
+            </div>
+            <div class="key" data-key="76">
+               <kbd>L</kbd>
+               <span class="sound">Tom</span>
+            </div>
+         </div>
+         <div class="keys" id="key-section-4">
+            <div class="key" data-key="74">
+               <kbd>J</kbd>
+               <span class="sound">Snare</span>
+            </div>
+            <div class="key" data-key="75">
+               <kbd>K</kbd>
+               <span class="sound">Tink</span>
+            </div>
+            <div class="key" data-key="76">
+               <kbd>L</kbd>
+               <span class="sound">Tom</span>
             </div>
             <div class="key" data-key="76">
                <kbd>L</kbd>
