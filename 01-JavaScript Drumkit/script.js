@@ -59,3 +59,6 @@ document.getElementById("12pad").onclick = function () {
 document.getElementById("16pad").onclick = function () {
    console.log("edward you pumping 16");
 };
+
+
+// testing my repos 
